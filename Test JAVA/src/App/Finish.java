@@ -24,7 +24,7 @@ public class Finish extends JFrame {
 	private JTextField textField;
 	private static ArrayList<Event> testEvents = new ArrayList<Event>();
 
-	// Para lanzar la aplicación.
+	// Para lanzar la aplicaciï¿½n.
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -61,7 +61,7 @@ public class Finish extends JFrame {
 		contentPane.add(textField);
 		
 		
-		// 1º Botón SEARCH
+		// 1ï¿½ Botï¿½n SEARCH
 		JButton btnNewButton = new JButton("SEARCH");
 		btnNewButton.setBackground(new Color(0, 255, 204));
 		btnNewButton.addActionListener(new ActionListener() {
@@ -92,7 +92,7 @@ public class Finish extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		
-		// 2º Botón SEARCH
+		// 2ï¿½ Botï¿½n SEARCH
 		JButton btnNewButton_1 = new JButton("SEARCH");
 		btnNewButton_1.setBackground(new Color(255, 255, 102));
 		btnNewButton_1.addActionListener(new ActionListener() {
@@ -119,7 +119,7 @@ public class Finish extends JFrame {
 		contentPane.add(lblNewLabel_1_1);
 		
 		
-		// 3º Botón SEARCH
+		// 3ï¿½ Botï¿½n SEARCH
 		JButton btnNewButton_1_1 = new JButton("SEARCH");
 		btnNewButton_1_1.setBackground(new Color(0, 153, 204));
 		btnNewButton_1_1.addActionListener(new ActionListener() {

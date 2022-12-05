@@ -13,7 +13,7 @@ public class TestingApp {
 	private static ArrayList<Fuente> testSources = new ArrayList<Fuente>();
 	private static ArrayList<Event> testEvents = new ArrayList<Event>();
 	
-	//Función para obtener listado por Timestamp
+	//Funciï¿½n para obtener listado por Timestamp
 	private static Event searchEventByTimestamp(Timestamp searchKey, List<Event> testEvents) {
 
 		System.out.println("\n" + "***************************");
@@ -33,7 +33,7 @@ public class TestingApp {
 		return null;
 	}
 	
-	//Función para obtener listado por Fuente_id
+	//Funciï¿½n para obtener listado por Fuente_id
 	private static Event searchEventBySourceID(String searchKey, List<Event> testEvents) {
 
 		System.out.println("\n" + "***************************");
@@ -52,7 +52,7 @@ public class TestingApp {
 		return null;
 	}
 	
-	//Función para obtener listado dentro de un rango de valores
+	//Funciï¿½n para obtener listado dentro de un rango de valores
 	private static ArrayList<Event> searchEventWithinValueRange(int valor1, int valor2, List<Event> testEvents) {
 
 		ArrayList<Event> returnEvents = new ArrayList<Event>();
@@ -115,7 +115,7 @@ public class TestingApp {
 			System.out.println(searchEventByTimestamp);
 		} else {
 
-			System.out.println(" No se puede encontrar ningún evento con el tiempo proporcionado " + value);
+			System.out.println(" No se puede encontrar ningï¿½n evento con el tiempo proporcionado " + value);
 		}
 		
 		return searchEventByTimestamp;
@@ -131,7 +131,7 @@ public class TestingApp {
 			System.out.println(searchEventBySourceIDResults);
 		} else {
 
-			System.out.println(" No se puede encontrar ningún evento con el fuente_id proporcionado  " + value);
+			System.out.println(" No se puede encontrar ningï¿½n evento con el fuente_id proporcionado  " + value);
 		}
 		
 		return searchEventBySourceIDResults;
@@ -147,7 +147,7 @@ public class TestingApp {
 			System.out.println(searchEventWithinValueRangeResults);
 		} else {
 
-			System.out.println(" No se puede encontrar ningún evento con el rango de valores proporcionado (" + value1 + "," + value2 + ")");
+			System.out.println(" No se puede encontrar ningï¿½n evento con el rango de valores proporcionado (" + value1 + "," + value2 + ")");
 		}
 		
 		return searchEventWithinValueRangeResults;
