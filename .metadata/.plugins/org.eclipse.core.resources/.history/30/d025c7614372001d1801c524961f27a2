@@ -1,0 +1,33 @@
+package App;
+import java.util.Scanner;
+/*import java.time.LocalTime;*/
+
+import Evento.java;
+
+public class fuente {
+	protected String nombre;
+	protected String id;
+	
+	public fuente() {
+		// TODO Auto-generated constructor stub
+	
+	}
+
+	public static void main(String[] args) {// TODO Auto-generated method stub
+		//dataBase
+	    String[] nombre = {"Jose", "Pablo", "Ramon", "Alfredo","Maria","Anne"};
+	    String[] id= {"001A", "002B", "003C", "004D","005E","006F"};	
+	    
+	    String[] fuente_id= {"start", "finish"};
+	    String[] timestamp= {"8:00", "13:00","15:00","18:00"};
+	    /*LocalTime timestamp = LocalTime.now();*/
+		int valor[]= {01,02,03,04,05,06};
+	    
+		//To check are ok
+	    System.out.println(nombre[5]+" tiene el nº "+ id[5]+" como id. Ha "+ fuente_id[0]+" exactamente a a las "+ timestamp+
+	    " por lo que su valoración de hoy es de: "+valor[3]);	
+	    
+	    //Call functions
+	}
+
+}

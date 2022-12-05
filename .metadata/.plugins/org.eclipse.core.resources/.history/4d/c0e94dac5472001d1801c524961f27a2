@@ -1,0 +1,41 @@
+
+import java.util.Scanner;
+
+
+public class Evento{
+	protected String nombre;
+	protected String id;
+	protected String evento;
+	
+	public Evento() {
+		// TODO Auto-generated constructor stub
+
+	}	
+	
+	public static void main(String[] args) {// TODO Auto-generated method stub
+		
+		//dataBase in arrays
+		String[] nombre= {"Jose", "Pablo", "Ramon", "Alfredo","Maria","Anne"};
+
+		
+		String[][] search= {
+				{"001A","start","8:00","+01"},
+				{"002B","finish","13:00","-3"},
+				{"003C","start","15:00","+03"},
+				{"004D","finish","18:00","-1"},
+				{"005E","start","8:00","+01"},
+				{"006F","finish","18:00","-1"}			
+		};
+
+		
+        for (int i = 0; i < 3; i++){
+        	System.out.println(" ");
+             for (int j = 0; j < 4 || j > 0 ; j++){
+                 System.out.println(search[i][j]);
+             }
+        }	
+     }
+
+
+}
+

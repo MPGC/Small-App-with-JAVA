@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+	
+
+public class Evento{
+	
+	/*fuente*/
+	protected String nombre;
+	protected int id;
+	
+	/*Evento*/
+	protected int fuente_id;
+	protected date timestamp;
+	protected int valor;
+
+
+	
+	
+	public funtionality() {
+		// TODO Auto-generated constructor stub
+		nom=new nombre("Jose")
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

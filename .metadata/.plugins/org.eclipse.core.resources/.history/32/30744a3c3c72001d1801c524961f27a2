@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+	
+
+public class funtionality {
+	
+	protected String nombre;
+	protected int id;
+	protected int fuente_id;
+	protected date timestamp;
+	protected int valor;
+	Fuente (id, nombre)
+	Evento (id, fuente_id, timestamp, valor)
+
+	
+	
+	public funtionality() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

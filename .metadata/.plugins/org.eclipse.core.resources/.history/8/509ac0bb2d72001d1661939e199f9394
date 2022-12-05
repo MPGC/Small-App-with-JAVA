@@ -1,0 +1,28 @@
+package APP;
+/*Descripción
+
+Una de las partes mas importantes en el producto de Ariadna es trabajar con grandes cantidades de eventos, que simplificando un poco, tienen un origen, un timestamp y un valor.
+El proyecto consiste en implementar una aplicación Java básica para trabajar con esos eventos. Para ello puedes asumir las siguientes estructuras:
+
+Fuente (id, nombre)
+Evento (id, fuente_id, timestamp, valor)
+
+La API que hay que implementar es:
+  - Buscar eventos por lista de timestamps.
+  - Buscar eventos por fuente_id.
+  - Buscar eventos dentro de un rango de valores (valor min, valor max). 
+
+Las búsquedas por timestamp y rango de valor deberían ser lo mas eficientes que sea posible (dentro de lo razonable, es solo una prueba).
+
+Instrucciones
+   - Entregar la prueba 1 día después de recibir la especificación.
+   - Usa JAVA con la version que te parezca pero intentando no usar demasiadas librerías externas. Es un proyecto simple que no necesita de frameworks complicados. Nada de bases de datos, Servicios web o similares, almacena todos los datos en memoria.
+   - Aunque sea una prueba sencilla nos gustaría que la realización fuera lo mas profesional posible. 
+      Haz el proyecto como harías un desarrollo en el trabajo normalmente, usa las herramientas que consideres necesario para ello.
+   - Para ayudar en el proceso de desarrollo y TESTING habrá que implementar una carga de fuentes y eventos desde archivo. Incorpora en la entrega los archivos con las fuentes y los eventos que hayas usando en el desarrollo.
+   - Incluye un MAIN para la ejecución del programa y los tests asociados para poder probar el desarrollo (al menos que cargue los archivos de prueba e invoque a las funciones de la API con varios parámetros distintos).
+   - Cuéntanos como ejecutamos el programa.*/
+
+public class main {
+
+}

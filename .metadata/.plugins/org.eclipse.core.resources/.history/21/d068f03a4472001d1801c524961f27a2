@@ -1,0 +1,15 @@
+package App;
+import java.util.Scanner;
+
+import fuente.java;
+	
+public class Evento {
+	protected String fuente_id;
+	protected String timestamp;
+	protected int valor;
+
+	public Evento() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

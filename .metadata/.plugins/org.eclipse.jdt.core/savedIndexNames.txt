@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\dampi\Desktop\Ariadna Grid - test JAVA\.metadata\.plugins\org.eclipse.jdt.core
+1676671857.index
+321834506.index
+1865797976.index

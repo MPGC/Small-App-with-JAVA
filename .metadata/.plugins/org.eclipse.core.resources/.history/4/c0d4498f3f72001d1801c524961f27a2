@@ -1,0 +1,20 @@
+package App;
+import java.util.Scanner;
+
+public class fuente {
+	protected String nombre;
+	protected Int id;
+	
+	public fuente() {
+		// TODO Auto-generated constructor stub
+	
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    String[] nombre = {"Jose", "Pablo", "Ramon", "Alfredo","Maria","Anne"};
+	    Int[] id= {01,02,03,04,05,06};
+	    System.out.println(nombre[3]);	
+	}
+
+}

@@ -1,0 +1,31 @@
+package App;
+import java.util.Scanner;
+
+import Evento.java;
+
+public class fuente {
+	protected String nombre;
+	protected String id;
+	
+	public fuente() {
+		// TODO Auto-generated constructor stub
+	
+	}
+
+	public static void main(String[] args) {// TODO Auto-generated method stub
+		//dataBase
+	    String[] nombre = {"Jose", "Pablo", "Ramon", "Alfredo","Maria","Anne"};
+	    String[] id= {"001A", "002B", "003C", "004D","005E","006F"};	
+	    
+	    String[] fuente_id= {"start", "finish"};
+		int timestamp;/*CHANGE*/
+		int valor[]= {01,02,03,04,05,06};
+	    
+	    
+	    System.out.println(nombre[5]+" tiene el nº "+ id[5]+" como id. Ha "+ fuente_id[0]+" exactamentea a las "+ timestamp[3]+
+	    " por lo que su valoración de hoy es de: "+valor[3]);	
+	    
+	    //Call functions
+	}
+
+}

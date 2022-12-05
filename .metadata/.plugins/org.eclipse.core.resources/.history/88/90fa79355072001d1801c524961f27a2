@@ -1,0 +1,79 @@
+package App;
+import java.util.Scanner;
+/*import java.time.LocalTime;*/
+
+//import Evento.java;
+
+public class fuente {
+	protected String nombre;
+	protected String id;
+	protected String evento;
+	
+	public fuente() {
+		// TODO Auto-generated constructor stub
+	
+	}
+	
+	public void event_timestap(String[][]search){
+		
+        for (int i = 0; i < 3; i++){
+      	  System.out.println();
+             for (int j = 0; j < 4; j++){
+                 System.out.println(search[i][j]+ "  ");
+     }
+ }
+	}
+
+	
+	public void event_fuente_id(){
+		
+			System.out.println(
+		    fuente_id[0]+" / "+ timestamp[0]+" / "+ id[0]+" / "+ valor[0]
+			fuente_id[1]+" / "+ timestamp[1]+" / "+ id[1]+" / "+ valor[1]
+			fuente_id[2]+" / "+ timestamp[2]+" / "+ id[2]+" / "+ valor[2]
+			fuente_id[3]+" / "+ timestamp[3]+" / "+ id[3]+" / "+ valor[3]
+			fuente_id[4]+" / "+ timestamp[4]+" / "+ id[4]+" / "+ valor[4]
+			fuente_id[5]+" / "+ timestamp[5]+" / "+ id[5]+" / "+ valor[5]
+			fuente_id[6]+" / "+ timestamp[6]+" / "+ id[6]+" / "+ valor[6]
+			);
+	}
+	
+	
+	public void event_valores(){
+		
+			System.out.println(
+			valor[0]+" / "+ fuente_id[0]+" / "+ id[0]+" / "+ timestamp[0]
+			valor[1]+" / "+ fuente_id[1]+" / "+ id[1]+" / "+ timestamp[1]
+			valor[2]+" / "+ fuente_id[2]+" / "+ id[2]+" / "+ timestamp[2]
+			valor[3]+" / "+ fuente_id[3]+" / "+ id[3]+" / "+ timestamp[3]
+			valor[4]+" / "+ fuente_id[4]+" / "+ id[4]+" / "+ timestamp[4]
+			valor[5]+" / "+ fuente_id[5]+" / "+ id[5]+" / "+ timestamp[5]
+			valor[6]+" / "+ fuente_id[6]+" / "+ id[6]+" / "+ timestamp[6]
+			);
+	}
+	
+	
+	public static void main(String[] args) {// TODO Auto-generated method stub
+		
+		//dataBase in arrays
+		String[] nombre= {"Jose", "Pablo", "Ramon", "Alfredo","Maria","Anne"};
+
+		
+		String[][] search= {
+				{"001A","start","8:00","+01"},
+				{"002B","finish","13:00","-3"},
+				{"003C","start","15:00","+03"},
+				{"004D","finish","18:00","-1"},
+				{"005E","start","8:00","+01"},
+				{"006F","finish","18:00","-1"}			
+		};
+
+	    
+	    //Call functions	    
+	    fuente f=new fuente();	    
+		    f.event_timestap();
+		    f.event_fuente_id();
+		    f.event_valores();
+	}
+
+}

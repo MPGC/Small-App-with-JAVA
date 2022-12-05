@@ -1,0 +1,18 @@
+package App;
+import java.util.Scanner;
+
+public class fuente {
+	protected String nombre;
+	protected int id;
+	
+	public fuente() {
+		// TODO Auto-generated constructor stub
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

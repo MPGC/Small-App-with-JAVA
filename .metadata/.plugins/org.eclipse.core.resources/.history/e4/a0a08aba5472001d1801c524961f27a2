@@ -1,0 +1,67 @@
+package App;
+import java.util.Scanner;
+
+public class fuente {
+	protected String nombre;
+	protected String id;
+	protected String evento;
+	
+	public fuente() {
+		// TODO Auto-generated constructor stub
+	
+	}
+	
+	public void event_timestap(String[][]search){
+		
+        for (int i = 0; i < 3; i++){
+        	System.out.println(" ");
+             for (int j = 0; j < 4; j++){
+                 System.out.println(search[i][j]);
+             }
+        }	
+	}
+
+	
+	public void event_fuente_id(String[][]search){
+			//Why is a mistake when I want to do a foreach?? to filter by fuente_id
+			for (String prueba:search) {
+				System.out.println(prueba);			
+			}
+	}
+	
+	
+	public void event_valores(String[][]search){
+        for (int i = 0; i < 3; i++){
+        	System.out.println(" ");
+             for (int j = 0; j < 4 || j > 0 ; j++){
+                 System.out.println(search[i][j]);
+             }
+        }			
+	
+	}
+	
+	
+	public static void main(String[] args) {// TODO Auto-generated method stub
+		
+		//dataBase in arrays
+		String[] nombre= {"Jose", "Pablo", "Ramon", "Alfredo","Maria","Anne"};
+
+		
+		String[][] search= {
+				{"001A","start","8:00","+01"},
+				{"002B","finish","13:00","-3"},
+				{"003C","start","15:00","+03"},
+				{"004D","finish","18:00","-1"},
+				{"005E","start","8:00","+01"},
+				{"006F","finish","18:00","-1"}			
+		};
+
+	    
+	    //Call functions	    
+	    fuente f=new fuente();	    
+		  f.event_timestap(search);
+		  f.event_fuente_id(search);
+		  f.event_valores(search);
+	}
+
+}

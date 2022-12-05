@@ -1,0 +1,94 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+public class Finish extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Finish frame = new Finish();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Finish() {
+		addComponentListener(new ComponentAdapter() {
+			@Override
+			public void componentResized(ComponentEvent e) {
+			}
+		});
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(200,200, 800, 800);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("SEARCH");
+		btnNewButton.setBackground(new Color(0, 255, 204));
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBounds(266, 24, 85, 21);
+		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel = new JLabel("SEARCH EVENTS BY TIMESTAMP LIST");
+		lblNewLabel.setBounds(42, 24, 195, 21);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("SEARCH EVENTS BY SOURCE ID");
+		lblNewLabel_1.setBounds(42, 65, 195, 21);
+		contentPane.add(lblNewLabel_1);
+		
+		JButton btnNewButton_1 = new JButton("SEARCH");
+		btnNewButton_1.setBackground(new Color(255, 255, 102));
+		btnNewButton_1.setBounds(266, 65, 85, 21);
+		contentPane.add(btnNewButton_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("SEARCH EVENTS BY RANGE OF VALUES");
+		lblNewLabel_1_1.setBounds(42, 110, 195, 21);
+		contentPane.add(lblNewLabel_1_1);
+		
+		JButton btnNewButton_1_1 = new JButton("SEARCH");
+		btnNewButton_1_1.setBackground(new Color(0, 153, 204));
+		btnNewButton_1_1.setBounds(266, 110, 85, 21);
+		contentPane.add(btnNewButton_1_1);
+		
+		textField = new JTextField();
+		textField.setBounds(43, 177, 308, 76);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblNewLabel_2 = new JLabel("RESULTS");
+		lblNewLabel_2.setBounds(42, 154, 45, 13);
+		contentPane.add(lblNewLabel_2);
+	}
+}
