@@ -24,9 +24,7 @@ public class Finish extends JFrame {
 	private JTextField textField;
 	private static ArrayList<Event> testEvents = new ArrayList<Event>();
 
-	/**
-	 * Launch the application.
-	 */
+	// Para lanzar la aplicación.
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -40,15 +38,15 @@ public class Finish extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	// Para crear y dar formato a la pantalla.
 	public Finish() {
 		addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentResized(ComponentEvent e) {
 			}
 		});
+		
+		//Pantalla
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(150, 100, 750, 500);
 		contentPane = new JPanel();
@@ -61,14 +59,16 @@ public class Finish extends JFrame {
 		textField.setBounds(173, 275, 439, 163);
 		textField.setColumns(10);
 		contentPane.add(textField);
-
+		
+		
+		// 1º Botón SEARCH
 		JButton btnNewButton = new JButton("SEARCH");
 		btnNewButton.setBackground(new Color(0, 255, 204));
 		btnNewButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 
-				fuente test = new fuente();
+				TestingApp test = new TestingApp();
 				test.setupData();
 
 				textField = new JTextField();
@@ -79,6 +79,7 @@ public class Finish extends JFrame {
 
 			}
 		});
+		
 		btnNewButton.setBounds(454, 113, 85, 21);
 		contentPane.add(btnNewButton);
 
@@ -89,14 +90,16 @@ public class Finish extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("SEARCH EVENTS BY SOURCE ID");
 		lblNewLabel_1.setBounds(172, 154, 272, 21);
 		contentPane.add(lblNewLabel_1);
-
+		
+		
+		// 2º Botón SEARCH
 		JButton btnNewButton_1 = new JButton("SEARCH");
 		btnNewButton_1.setBackground(new Color(255, 255, 102));
 		btnNewButton_1.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 
-				fuente test = new fuente();
+				TestingApp test = new TestingApp();
 				test.setupData();
 
 				textField = new JTextField();
@@ -107,20 +110,23 @@ public class Finish extends JFrame {
 
 			}
 		});
+		
 		btnNewButton_1.setBounds(454, 154, 85, 21);
 		contentPane.add(btnNewButton_1);
 
 		JLabel lblNewLabel_1_1 = new JLabel("SEARCH EVENTS BY RANGE OF VALUES");
 		lblNewLabel_1_1.setBounds(172, 199, 272, 21);
 		contentPane.add(lblNewLabel_1_1);
-
+		
+		
+		// 3º Botón SEARCH
 		JButton btnNewButton_1_1 = new JButton("SEARCH");
 		btnNewButton_1_1.setBackground(new Color(0, 153, 204));
 		btnNewButton_1_1.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 
-				fuente test = new fuente();
+				TestingApp test = new TestingApp();
 				test.setupData();
 
 				textField = new JTextField();
@@ -131,6 +137,8 @@ public class Finish extends JFrame {
 
 			}
 		});
+		
+		
 		btnNewButton_1_1.setBounds(454, 199, 85, 21);
 		contentPane.add(btnNewButton_1_1);
 

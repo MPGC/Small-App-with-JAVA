@@ -5,10 +5,11 @@ import java.sql.Timestamp;
 public class Event {
 
 	private String id;
-	private String source_id;
+	private String fuente_id;
 	private Timestamp timestamp;
-	private int value;
+	private int valor;
 
+	//Getters y setters
 	public String getId() {
 		return id;
 	}
@@ -17,12 +18,12 @@ public class Event {
 		this.id = id;
 	}
 
-	public String getSource_id() {
-		return source_id;
+	public String getFuente_id() {
+		return fuente_id;
 	}
 
-	public void setSource_id(String source_id) {
-		this.source_id = source_id;
+	public void setFuente_id(String fuente_id) {
+		this.fuente_id = fuente_id;
 	}
 
 	public Timestamp getTimestamp() {
@@ -33,16 +34,16 @@ public class Event {
 		this.timestamp = timestamp;
 	}
 
-	public int getValue() {
-		return value;
+	public int getValor() {
+		return valor;
 	}
 
-	public void setValue(int value) {
-		this.value = value;
+	public void setValor(int valor) {
+		this.valor = valor;
 	}
 
 	@Override
 	public String toString() {
-		return "Event [id=" + id + ", source_id=" + source_id + ", timestamp=" + timestamp + ", value=" + value + "]";
+		return "Event [id=" + id + ", fuente_id=" + fuente_id + ", timestamp=" + timestamp + ", valor=" + valor + "]";
 	}
 }
